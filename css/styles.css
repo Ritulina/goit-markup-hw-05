@@ -318,7 +318,7 @@ section {
    height: 70px;
    bottom: 0;
 }
-.descr-ovrlay {
+.descr-overlay {
    display: flex;
    justify-content: center;
    padding-top: 27px;
@@ -651,6 +651,7 @@ footer{
 }
 .card-image-container {
    position: relative;
+   overflow: hidden;
 }
 .card-item-overlay-descr {
    font-size: 18px;
