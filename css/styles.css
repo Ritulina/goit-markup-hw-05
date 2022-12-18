@@ -82,7 +82,9 @@ section {
    padding-top: 94px;
    padding-bottom: 94px;
 }
+
 /* Header section*/
+
 .header-section {
    padding-top: 0px;
    padding-bottom: 0px;
@@ -102,6 +104,7 @@ section {
 .header-logo-web {
    padding-top: 24px;
    padding-bottom: 24px;
+   margin-right: 90px;
    font-family: 'Raleway', sans-serif;
    font-size: 26px;
    color: var(--blue-color);
@@ -123,7 +126,6 @@ section {
    display: flex;
    align-items: center;
    gap: 50px;
-   margin-left: auto;
    font-weight: 500;
    font-size: 14px;
    letter-spacing: var(--letter-spacing-02);
@@ -193,15 +195,18 @@ section {
 }
 
 /* Hero section */
+
 .hero-section {
    padding-top: 200px;
    padding-bottom: 200px;
    margin: 0 auto;
-   background: rgba(47, 48, 58, 0.4);
-   background-image: url('../images/Hero_image.jpg');
+   background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),url('../images/Hero_image.jpg'
+      );
    background-repeat: no-repeat;
    background-position: 50% 50%;
-}
+}   
 .hero-container {
    display: flex;
    flex-direction: column;
@@ -238,7 +243,9 @@ section {
    line-height: var(--line-height-30px-16px);
    border: none;
 }
+
 /* Features section */
+
 .features-section {
    margin: 0 auto;   
    padding-bottom: 0;
@@ -284,7 +291,9 @@ section {
    letter-spacing: var(--letter-spacing-03);
    color: var(--p-color);
 }
+
 /* Business section */
+
 .business-section {
    margin: 0 auto;
 }
@@ -330,7 +339,9 @@ section {
    text-transform: uppercase;
    color: var(--white-color);
 }
+
 /* Team section */
+
 .team-section {
    background: #F5F4FA;
    padding-bottom: 94px;
@@ -393,7 +404,9 @@ section {
    width: 100%;
    height: 100%;
    fill: #AFB1B8;
-   background-color: var(--white-color);  
+   background-color: var(--white-color);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   border-radius: 50%;
 }
 .social-link:hover ,
 .social-link:focus {
@@ -408,6 +421,7 @@ section {
 }
 
 /* Customers section */
+
 .customers-list {
    display: flex;
    flex-wrap: wrap;
@@ -433,6 +447,7 @@ section {
    background-color: none;
    border: 1px solid #AFB1B8 ;
    border-radius: 4px;
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link:hover ,
 .customers-link:focus {
@@ -445,6 +460,7 @@ section {
 }
 
 /* Footer section*/
+
 footer{
    background: var(--bgd-color);
    margin: 0 auto;  
@@ -561,6 +577,7 @@ footer{
    fill: var(--white-color);
    background-color: rgba(255, 255, 255, 0.1);
    border-radius: 50%;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-socials-link:hover ,
 .footer-socials-link:focus {
@@ -577,9 +594,10 @@ footer{
    gap: 10px;
 }
 
-                                             /* css for Portfolio */
+------------ /* css for Portfolio */ ------------
 
 /* Projects Section */
+
 .projects-container {
    display: flex;
    flex-direction: column;   
@@ -602,6 +620,7 @@ footer{
    letter-spacing: var(--letter-spacing-03);
    line-height: var(--line-height-26px-16px);
    border-radius: 4px;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttons-list .button-portfolio {
    color: var(--h-color-);
@@ -636,18 +655,12 @@ footer{
    left: 0;
    background-color: rgba(33, 150, 243, 0.9);
    color: var(--white-color);
-
    transform: translateY(100%);
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   opacity: 0;
-   visibility: hidden;
-   pointer-events: none;
 }
 .card-link:hover .card-item-overlay ,
 .card-link:focus .card-item-overlay {
-   transform: translateY(0);  
-   opacity: 1;
-   visibility: visible;
+   transform: translateY(0); 
 }
 .card-image-container {
    position: relative;
@@ -713,6 +726,7 @@ footer{
    left: 50%;
    transform: translate(-50%, -50%);
    background-color: var(--white-color);
+   border-radius: 4px;
    max-width: 528px;
    width: 100%;
    max-height: 580px;
